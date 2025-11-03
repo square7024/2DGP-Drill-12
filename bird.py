@@ -1,6 +1,5 @@
 from pico2d import *
 from random import randint
-import game_world
 import game_framework
 
 # Bird Fly Speed
