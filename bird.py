@@ -1,4 +1,5 @@
 from pico2d import *
+from random import randint
 import game_world
 import game_framework
 
@@ -17,8 +18,8 @@ FRAMES_PER_ACTION = 14
 class Bird:
     def __init__(self, x = 400 , y = 500):
         self.image = load_image('bird_animation.png')
-        self.x, self.y = x, y
-        self.frame = 0
+        self.x, self.y = x + randint(-200, 200), y + randint(-50, 50)
+        self.frame = randint(0, 13)
         self.dir = 1
         self.flip = ''
 
